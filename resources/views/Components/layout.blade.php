@@ -32,7 +32,7 @@
                 <a href="/about"  class="rounded-md {{ request()->is('about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }}   px-3 py-2 text-sm font-medium  ">About</a>
                 <a href="/services"  class="rounded-md {{ request()->is('services') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }}   px-3 py-2 text-sm font-medium  ">Services</a>
                 <a href="/contact"  class="rounded-md {{ request()->is('contact') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }}   px-3 py-2 text-sm font-medium  ">Contact</a>
-                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Reports</a>
+                <a href="#"  class="rounded-md {{ request()->is('#') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }}   px-3 py-2 text-sm font-medium  ">Reports</a>
               </div>
             </div>
           </div>
