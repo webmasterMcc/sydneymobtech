@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{-- <script type="module" src="{{ asset('js/swiperBanner.js') }}" defer></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    
     <title>Sydney Mob Tech</title>
+     
 </head>
 <body class="h-full">
+   
+
   <!--
   This example requires updating your template:
 
@@ -138,6 +142,7 @@
       </div>
     </header>
     <main>
+        <x-bannerSlider></x-bannerSlider>
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <!-- Your content -->
         {{$slot}}
@@ -145,6 +150,6 @@
     </main>
   </div>
   
-
+  @vite(['resources/js/app.js', 'resources/js/swiperBanner.js'])
 </body>
 </html>
