@@ -6,7 +6,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     {{-- <script type="module" src="{{ asset('js/swiperBanner.js') }}" defer></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <title>Sydney Mob Tech</title>
      
 </head>
@@ -142,6 +142,9 @@
       </div>
     </header>
     <main>
+      @if(Request::path() === "/")
+        
+      @endif
         <x-bannerSlider></x-bannerSlider>
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <!-- Your content -->

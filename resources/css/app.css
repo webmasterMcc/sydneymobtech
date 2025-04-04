@@ -4,7 +4,7 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
-@import 'swiper/swiper-bundle.min.css';
+@import 'swiper/css';
 
 
 @theme {

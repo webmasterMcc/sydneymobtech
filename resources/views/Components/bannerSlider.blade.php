@@ -6,7 +6,7 @@
                 <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 1" class="w-full h-auto">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 1" class="w-full h-auto">
+                <img src="{{ asset('images/mechanic-image2.jpg') }}" alt="Image 1" class="w-full h-auto">
             </div>
             <div class="swiper-slide">
                 <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 1" class="w-full h-auto">

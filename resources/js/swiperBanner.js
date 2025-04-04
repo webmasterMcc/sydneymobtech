@@ -5,6 +5,8 @@ import 'swiper/swiper-bundle.css';  // Import Swiper styles
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".mySwiper", {
         loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -19,4 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
-console.log(Swiper)
+ 
+
