@@ -13,3 +13,24 @@
 }
 
 nav ul li a {float: left;}
+/* Ensure swiper container is full width */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+}
+.swiper-wrapper{
+    overflow: hidden;
+}
+
+/* Set navigation arrows' size */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff; /* Or any color for the arrows */
+    width: 40px;  /* Set the width of the arrows */
+    height: 40px; /* Set the height of the arrows */
+}
+
+/* Optional: Style the pagination dots */
+.swiper-pagination-bullet {
+    background-color: #fff; /* Change dot color */
+}

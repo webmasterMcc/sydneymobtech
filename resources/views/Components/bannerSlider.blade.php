@@ -1,15 +1,15 @@
     <!-- Swiper HTML -->
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
+    <div class="swiper-container mySwiper overflow-hidden">
+        <div class="swiper-wrapper ">
             <!-- Add slides here -->
             <div class="swiper-slide">
                 <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 1" class="w-full h-auto">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/mechanic-image2.jpg') }}" alt="Image 1" class="w-full h-auto">
+                <img src="{{ asset('images/mechanic-image2.jpg') }}" alt="Image 2" class="w-full h-auto">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 1" class="w-full h-auto">
+                <img src="{{ asset('images/mechanic-image.jpg') }}" alt="Image 2" class="w-full h-auto">
             </div>
         </div>
         <!-- Add Pagination -->
