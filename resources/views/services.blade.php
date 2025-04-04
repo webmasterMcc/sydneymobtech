@@ -3,6 +3,6 @@
     <p>services page</p>
     
     @foreach($services as $key => $value)
-        <li><a href="jobs/{{$value['id']}}">{{$value['title']}}</a></li>
+        <li><a href="service/{{$value['id']}}">{{$value['title']}}</a></li>
     @endforeach
 </x-layout>

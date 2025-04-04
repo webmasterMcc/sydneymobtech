@@ -11,6 +11,7 @@ Route::get('/about', function () {
   //  return ['laravel'=> "hell world"];
 });
 Route::get('/services', function () {
+
     return view('services' , [
       "services" => [
           [   "id" => 1,
@@ -37,10 +38,36 @@ Route::get('/services', function () {
       ]
   ]);
   //  return ['laravel'=> "hell world"];
+
 });
 
-Route::get("/jobs/{id}" , function($id){
-        dd($id) ;
+Route::get("/service/{id}" , function($id){
+       
+        $services = [
+          [   "id" => 1,
+              "title" => "Senior Software Engineer",
+              "salary" => "$120,000 - $150,000"
+          ],
+          [   "id" => 2,
+              "title" => "Mobile App Developer", 
+              "salary" => "$90,000 - $120,000"
+          ],
+          [   "id" => 3,
+              "title" => "Full Stack Developer",
+              "salary" => "$100,000 - $130,000"
+          ],
+          [    "id" => 4,
+              "title" => "DevOps Engineer",
+              "salary" => "$110,000 - $140,000"
+          ],
+          [    
+              "id" => 5,
+              "title" => "UI/UX Designer",
+              "salary" => "$80,000 - $110,000"
+          ] ];
+      $service =  \Illuminate\Support\Arr::first($services , fn($service) =>   $service['id'] ==   $id  ) ;
+     // dd($id ) ;
+      return view("service" , ['service' => $service]) ;
 }) ;
 
 Route::get('/contact', function () {
